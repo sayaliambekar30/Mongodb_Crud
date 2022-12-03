@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+ {{> header}}
+
+</head>
+
+<body >
+
+ <div class="row">
+   
+  
+  <div style="display:flex; width:100%; flex-wrap:wrap"> 
+  {{#each data}}
+    <div class="card text-center" style="width: 18rem;">
+    <img src={{imag}} class="card-img-top" style="height: 200px; width:auto;" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">{{name}}</h5>
+    <p class="card-text">{{price}}</p>
+    <p class="card-text">{{quantity}}</p>
+    <p class="card-text">{{description}}</p>
+    <div class="btn-group">
+      <a href="editproduct/{{_id}}" class="btn btn-success">edit</a>&nbsp;&nbsp;&nbsp;
+      <a href="deleteproduct/{{_id}}" class="btn btn-danger">delete</a>
+    </div>
+  </div>
+</div>
+  {{/each}}
+ </div>
+</div>
+ 
+ 
+</body>
+
+</html>

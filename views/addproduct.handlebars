@@ -1,0 +1,79 @@
+<html>
+
+
+<head> 
+  {{> header}}
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+<body>
+
+<!------ Include the above in your HEAD tag ---------->
+
+<form class="form-horizontal form-control" action='/addproduct1' method="POST">
+  <fieldset>
+
+ {{!-- <div class="control-group">
+      <!-- Username -->
+      
+      <div class="controls">
+        <input type="text" id="id" name="product_id"  class="input-xlarge">
+      </div>
+    </div> --}}
+
+
+   <div class="control-group">
+      <!-- Username -->
+      <label class="control-label"  for="username">Name</label>
+      <div class="controls">
+        <input type="text" id="product_name" name="name"  class="input-xlarge">
+      </div>
+    </div>
+
+    <div class="control-group">
+      <!-- Image -->
+      <label class="control-label"  for="username">Image link</label>
+      <div class="controls">
+        <input type="url" id="product_imag" name="imag"  class="input-xlarge">
+      </div>
+    </div>
+
+  
+ 
+    <div class="control-group">
+      <!-- E-mail -->
+      <label class="control-label" for="email">Price</label>
+      <div class="controls">
+        <input type="text" id="product_price" name="price"  class="input-xlarge">
+       </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Password-->
+      <label class="control-label" >Quantity</label>
+      <div class="controls">
+        <input type="text" id="product_quantity" name="quantity"  class="input-xlarge">
+        </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Password -->
+      <label class="control-label"  for="password_confirm">Description</label>
+      <div class="controls">
+        <input type="text" id="product_desc" name="description" class="input-xlarge">
+        </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Button -->
+      <div class="controls">
+        <button type="submit" class="btn btn-success">Register</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+</body>
+
+</html>
